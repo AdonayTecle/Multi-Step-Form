@@ -1,5 +1,5 @@
 # Multi-Step-Form
-
+![image](https://github.com/AdonayTecle/Multi-Step-Form/assets/15231050/0194e258-8763-4ad3-87b5-2337a691799f)
 This is a multi-step form application built with React on the client-side and Express.js on the server-side. It allows users to submit their information in multiple steps.
 
 # Prerequisites
