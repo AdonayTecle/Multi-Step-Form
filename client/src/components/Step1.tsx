@@ -21,10 +21,12 @@ const InputWrapper = styled.div`
   
   input {
     border-radius: 10px;
-    width: 180px;
+    width: 173px;
     height: 31px;
     box-shadow: inset 0 0 10px #808080;
     border: none;
+    margin-left:-17px;
+    margin-right:9px;
   }
 `;
 
@@ -32,12 +34,16 @@ const InputLabel = styled.label`
   margin-bottom: 5px;
   text-align: left;
   font-weight: 550;
+  font-size:13.5px;
+  margin-top:4.5px;
+  margin-left:-13px;
 `;
 
 const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+  margin-top:-9px;
 `;
 
 const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
@@ -52,7 +58,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
     <StyledStep1>
       <FlexRow>
         <InputWrapper>
-          <InputLabel>First Name:</InputLabel>
+          <InputLabel>First Name</InputLabel>
           <input
             type="text"
             name="firstName"
@@ -61,7 +67,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
           />
         </InputWrapper>
         <InputWrapper>
-          <InputLabel>Last Name:</InputLabel>
+          <InputLabel>Surname</InputLabel>
           <input
             type="text"
             name="lastName"
@@ -71,7 +77,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
         </InputWrapper>
       </FlexRow>
       <InputWrapper>
-        <InputLabel>Email:</InputLabel>
+        <InputLabel>Email Address:</InputLabel>
         <input
           type="text"
           name="email"

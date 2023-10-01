@@ -12,19 +12,22 @@ const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Set a minimum height for the container */
-  padding: 0 20px; /* Added padding to align the form */
+  min-height: 100vh;
+  padding: 0 20px;
 `;
 
 // Styled Form
 const StyledForm = styled.form`
   background-color: white;
-  padding: 5px; /* Added padding to the form */
+  padding-top: 4px;
+  padding-right:4px;
+  padding-left:4px;
   border-radius: 7px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px; /* Double the maximum width of the form */
-  width: 100%; /* Added to fill the container */
-  min-height: 350px; /* Set a minimum height for the form */
+  box-shadow: 0px 0px 10px rgba(0, 11, 5, 0.5);
+  max-width: 585px; 
+  width: 100%;
+  min-height: 327px;
+  padding-bottom:0px;
 `;
 
 // Styled Section (for Step1, Step2, Step3)
@@ -32,43 +35,51 @@ const StyledSection = styled.section`
   background-color: #DEDEDE;
   border-radius: 7px;
   margin-top: 5px;
-  padding: 24px; /* Added padding to the sections */
+  padding: 24px;
   position: relative;
-  transition: background-color 0.5s; /* Added transition for background color */
+  transition: background-color 0.5s;
   margin-top: -15px;
+  margin-bottom:6px;
+  height:139px;
 `;
 
 const Step1Section = styled(StyledSection)`
   &&& {
-    padding-bottom: 14px; /* Add padding-bottom for Step 1 only */
+    padding-bottom: 15px;
   }
 `;
 
 const Step2Section = styled(StyledSection)`
   &&& {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 `;
 
 const Step3Section = styled(StyledSection)`
   &&& {
     padding-bottom: 24px;
+    height:129px;
   }
 `;
 
 // Styled Heading (for Step1, Step2, Step3)
 const StyledHeading = styled.h1`
-  background-color: #F5B805;
-  color: white;
+  background: linear-gradient(90deg, #F5B805 0%, #F5B805 50%, #F5B805 100%);
+  color: #FAF1E8;
   padding: 8px;
   text-align: left;
   border-radius: 7px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  margin-top:0px;
   font-size: 16px;
   position: relative;
   z-index: 2;
   height: 33px;
   font-weight: 400;
+  padding-top:12px;
+  padding-bottom:4px;
+  padding-right:8px;
+  padding-left:8px;
 `;
 
 // Styled Next Button (for Step1, Step2, Step3)

@@ -11,6 +11,9 @@ const StyledContainer = styled.div`
 const StyledLabel = styled.label`
   text-align: left;
   font-weight:550;
+  font-size:13.5px;
+  margin-top:4.5px;
+  margin-left:-13px;
 `;
 
 const StyledInputWrapper = styled.div`
@@ -26,6 +29,8 @@ const StyledInput = styled.input`
   border-radius: 10px;
   box-shadow: inset 0 0 10px #808080;
   border-style:none;
+  margin-left:-17px;
+  margin-right:9px;
 `;
 
 const StyledSelect = styled.select`
@@ -44,8 +49,9 @@ const StyledDateOfBirthWrapper = styled.div`
 `;
 
 const StyledDateOfBirthInput = styled(StyledInput)`
-  width: 30px;
+  width: 37px;
   height: 31px;
+  margin-right:23px;
 `;
 
 const StyledContainerWithMargin = styled(StyledContainer)`
@@ -87,7 +93,7 @@ const Step2: React.FC<Step2Props> = ({ formData, setFormData }) => {
       <StyledInputWrapper>
         <StyledContainerWithMargin>
           <StyledLabel>
-            Telephone Number:
+            Telephone number:
           </StyledLabel>
           <StyledInput
             type="text"
