@@ -10,8 +10,6 @@ Node.js: Make sure you have Node.js installed. You can download it at https://no
 
 # Getting Started
 
-    npm install dotenv
-
 ## Client Setup
 
 Open your terminal and navigate to the client directory:
@@ -36,13 +34,17 @@ Install the server-side dependencies:
 
     npm install
 
+From the root directory Multi-Step-Form run:
+    
+    npm install dotenv
+
 Create a SQLite database file.
-Navigate to Multi-Step-Form\server\ and open the .env file
-Change the DATABASE_PATH to the SQLite database file in your system
+Navigate to the Multi-Step-Form\server\ directory and open the .env file.
+Change the DATABASE_PATH to the SQLite database file in your system.
 
     DATABASE_PATH=C:\\sqlite\\dataform.db
 
-Start the server:
+From Multi-Step-Form\server\ directory run the following command to start the server:
 
     npm start
 
