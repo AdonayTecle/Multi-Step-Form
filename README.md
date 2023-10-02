@@ -9,6 +9,9 @@ Before you begin, ensure you have met the following requirements:
 Node.js: Make sure you have Node.js installed. You can download it at https://nodejs.org/en/download.
 
 # Getting Started
+
+    npm install dotenv
+
 ## Client Setup
 
 Open your terminal and navigate to the client directory:
@@ -19,11 +22,9 @@ Install the client-side dependencies:
 
     npm install
 
-Start the client-side development server:
+create a build directory:
 
-    npm start
-
-The React application should now be running at http://localhost:3000.
+    npm run build
 
 # Server Setup
 
@@ -35,9 +36,11 @@ Install the server-side dependencies:
 
     npm install
 
-Create a SQLite database file (if it doesn't exist) by running the following command:
+Create a SQLite database file.
+Navigate to Multi-Step-Form\server\ and open the .env file
+Change the DATABASE_PATH to the SQLite database file in your system
 
-    npm run db:init
+    DATABASE_PATH=C:\\sqlite\\dataform.db
 
 Start the server:
 
