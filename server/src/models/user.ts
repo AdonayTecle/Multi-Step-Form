@@ -1,6 +1,5 @@
-// models/user.ts
 import { Sequelize, DataTypes } from 'sequelize';
-import sequelize from '../db'; // Import the Sequelize instance from db.js
+import sequelize from '../db';
 
 export const User = sequelize.define('User', {
   firstName: {
